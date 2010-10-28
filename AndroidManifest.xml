@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="sg.edu.rp.joelum.sapAssignment" android:versionCode="1"
+	android:versionName="1.0">
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".sapAssignment" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Light.NoTitleBar">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".libListView"
+			android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+		<activity android:name=".mediaPlayer"
+			android:theme="@android:style/Theme.Light.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".recentlyPlayedSong"></activity>
+		<activity android:name=".webService"
+			android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+
+		<receiver android:name=".mpWidget" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="edu.rp.sdwidget.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/widget" />
+		</receiver>
+
+		<service android:name=".widgetService"></service>
+		<activity android:name=".playlist"></activity>
+	</application>
+	<uses-sdk android:minSdkVersion="4" />
+
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+</manifest> 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Social MP3 Player</string>
+    <string name="app_name">Social Audio Player</string>
+<string name="nowPlaying">Now Playing</string>
+<string name="ws">Web Service</string>
+<string name="create_playlist">New Playlist</string>
+
+<string name="addSong">Add to playlist</string>
+<string name="back_to_playlist">Return to playlist</string>
+</resources>

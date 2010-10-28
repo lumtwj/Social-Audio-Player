@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+<RelativeLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    <TextView  
+	    android:layout_width="fill_parent"
+	   	android:layout_height="50dip"
+	   	android:id="@+id/wsTitlebar"
+	    android:text="@string/ws"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textStyle="bold"
+	   	android:singleLine="true"
+	   	android:textColor="#FFFFFF"
+	   	android:gravity="center_vertical|center_horizontal"
+	   	android:background="@drawable/titlebar"
+	    />
+	    <LinearLayout 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:padding="5dip">
+			<ImageButton 
+				android:id="@+id/music" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_arrow_left"
+				android:background="@drawable/btn_list"
+				android:paddingLeft="10dip"
+				android:paddingRight="10dip"
+				android:paddingTop="5dip"
+				android:paddingBottom="5dip">
+				</ImageButton>
+			</LinearLayout>
+	<ListView 
+		android:id="@id/android:list"
+	   	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/wsTitlebar"/>
+	</RelativeLayout>
+</LinearLayout>

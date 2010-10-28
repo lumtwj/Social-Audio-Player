@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+<ViewFlipper 
+	android:id="@+id/vf" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+<ListView 
+	android:id="@+id/lvPl" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+</ListView>
+<RelativeLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	<ListView 
+		android:id="@+id/lvSl" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:layout_above="@+id/back">
+		</ListView>
+	<Button 
+		android:text="@string/back_to_playlist" 
+		android:id="@+id/back" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+		</Button>
+	</RelativeLayout>
+</ViewFlipper>
+</LinearLayout>

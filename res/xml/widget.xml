@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:initialLayout="@layout/mp_widget_view" 
+	android:minWidth="240px"
+	android:minHeight="20px" 
+	android:label="SAP Widget"
+	android:updatePeriodMillis="10" />
